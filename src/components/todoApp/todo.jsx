@@ -24,7 +24,7 @@ const Todo = () => {
                         {todo.map((item,i)=>{
                            return(
                                <tr key={i.toString()}>
-                                   <td>{i}</td>
+                                   <td>{i+1}</td>
                                    <td>{item}</td>
                                    <td><button onClick={()=>todoEditAlert(i,item)} className="btn btn-sm btn-dark">Edit</button></td>
                                    <td> <button onClick={()=>{todoDelete(i)}} className="btn btn-sm btn-danger">Remove</button></td>
